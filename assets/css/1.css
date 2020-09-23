@@ -1,0 +1,15 @@
+.nacc{
+    background-color: #a2b9bc !important;
+}
+.naa a{
+    color: black !important;
+    font-family: "cursive";
+    font-size: 18px;
+    padding: 5px;
+
+}
+.naa a:hover{
+    color: white !important;
+    background-color: teal;
+  border: 2px solid black;
+}

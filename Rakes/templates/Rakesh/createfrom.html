@@ -1,0 +1,42 @@
+{% extends 'Rakesh/Index.html' %}
+{% load static %}
+{% block title %}Order{% endblock %}
+
+{% block content %}
+<h1 class="text-center text-monospace">Ask for servics or Order</h1>
+    <div class="container text-center">
+    <div class="row">
+
+  <div class="<col-lg-6">
+  <form class="form ml-5" action="" method="post">
+     <div class="card ml-15  text-center" >
+
+     {% csrf_token %}
+         {% for field in form %}
+         <label class=" mt-2 h5 text-black" for="{{ field.id_for_label }}">{{ field.html_name }}</label>
+             {{ field }}
+
+         {% endfor %}
+      <input type="submit" onclick="mess()" class="mb-3 mt-3 btn-success" value="Save" />
+
+         </div>
+   </form>
+   </div>
+
+
+    <div class="col-lg-6 text-center mt-4">
+        <div class="ml-5 text-center">
+
+            <ul class="list-group overflow-auto">
+  <li class="list-group-item active"> <h1 class="text-center">Introduction about form</h1></li>
+                <li class="list-group-item badge" style="font-size: 18px"> Dont leave any area empty</li>
+  <li class="list-group-item badge" style="font-size: 18px">Please Enter the exact name of clinet</li>
+  <li class="list-group-item badge" style="font-size: 18px">Phone number those are active 24 Hours</li>
+  <li class="list-group-item badge" style="font-size: 18px">Email for reply</li>
+                <li style="list-style: none;font-size: 18px;background-color: white" class="badge mt-4">In Order area You can order anything about CCtv,<br></br>Cartridge,Cartridge part,computer part and CCTV<br><br> related and window installing all services</li>
+</ul>
+        </div>
+    </div>
+    </div>
+    </div>
+{% endblock %}

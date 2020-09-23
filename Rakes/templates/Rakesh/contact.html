@@ -1,0 +1,60 @@
+{% extends 'Rakesh/Index.html' %}
+{% load static %}
+<title>{% block title %}Contact{% endblock %}</title>
+{% block content %}
+ <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Contact
+      <small>Subheading</small>
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Contact</li>
+    </ol>
+
+    <!-- Content Row -->
+    <div class="row">
+      <!-- Map Column -->
+      <div class="col-lg-8 mb-4 text-white">
+        <!-- Embedded Google Map -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4077.828621673653!2d75.46128595305764!3d32.34890352689688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391c716269fd8fcb%3A0xb220b6b49eb86b5b!2sNagri-Parole%2C%20Punjab%20184151!5e1!3m2!1sen!2sin!4v1599064033982!5m2!1sen!2sin" width="600" height="450"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <!-- Contact Details Column -->
+
+      <div class="col-lg-4 mb-4 card-group" style="background-color: white">
+
+        <h4 class="text-center">Contact Details</h4>
+        <h4 class="mt-5">
+          Khokhyal,Nagri Parole
+          <br>Kathua, 184151
+          <br>
+        </h4>
+        <h4 class="text-black-10">
+          Phone : (+91) 9070054186
+        </h4>
+           <h4 class="text-black-10">
+          Phone : (+91) 9070021845
+        </h4>
+        <h4 class="text-black-10">
+          Email:
+          <a href="mailto:rakeshenterprise140@gmail.com">rakeshenterprise140@gmail.com
+          </a>
+        </h4>
+        <h4 class="text-black-10 ">
+           Monday - Friday: 9:00 AM to 5:00 PM
+        </h4>
+      </div>
+    </div>
+    <!-- /.row -->
+
+
+    <!-- Contact Form -->
+    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+
+    </div>
+{% endblock %}
